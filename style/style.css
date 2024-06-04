@@ -1,0 +1,600 @@
+/* yeseva-one-regular - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/yeseva-one-v22-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+/* nunito-regular - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/nunito-v26-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+/* nunito-700 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/nunito-v26-cyrillic_latin-700.woff2') format('woff2');
+}
+
+:root {
+    --color-brand-light: #FDFBE2;
+    --color-brand-dark: rgb(51, 51, 51);   
+    --color-brand-yellow: #FDC748;
+    --color-violet-light: #946DD4;
+    --color-violet-dark: #6E5B9D;
+    --color-shadow: rgba(0, 0, 0, 0.25);
+    --color-shadow-violet: rgb(76, 54, 112);
+    --color-brand: #664898;
+    --color-placeholder: #D0B3FF;
+    --color-brand-violet: #B497DB;
+}
+
+/* Base */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-brand-dark);
+    background-color: var(--color-brand-light);
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+a {
+    display: inline-block;
+}
+
+address {
+    font-style: normal;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.section {
+    padding: 48px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1177px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+h4 {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 24px;
+}
+
+/* Ховаємо елемент, щоб візуально його не було видно*/
+.visually-hidden {
+    position: absolute;
+    left: -10000;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/*Link*/
+.link {
+    color: var(--color-brand-dark);
+    text-decoration: none;
+    /*font-weight: 700;*/
+}
+
+.link:hover {
+    color: var(--color-violet-light);
+}
+
+/*Header*/
+.header-menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.location-name {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-brand-dark);
+}
+
+.location-name img {
+    margin-right: 4px;
+}
+
+.tel-name { 
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+/*Hero*/
+.new-line {
+    display: block;
+        /* або inline-block залежно від вашого дизайну */
+}
+
+.hero-title-section {
+    /*max-width: 751px;*/
+    min-width: 967px;
+}
+
+.hero-section {
+    padding: 170px 0px 0px 0px;
+    background-color: var(--color-violet-dark);
+    min-width: max-content;
+    background-size: cover;
+    /*box-shadow:
+        inset 0 4px 4px var(--color-brand-yellow),
+            Внизу
+    inset 0 -4px 4px var(--color-brand-yellow); Вгорі */ 
+    border-bottom: solid 3px var(--color-brand-yellow);
+    border-top: solid 3px var(--color-brand-yellow);
+}
+
+.hero-section-contacts {
+    padding: 94px 0px 94px 0px;
+    background-color: var(--color-violet-dark);
+    min-width: max-content;
+    background-size: cover;
+    /*box-shadow:
+        inset 0 4px 4px var(--color-brand-yellow),
+            Внизу
+    inset 0 -4px 4px var(--color-brand-yellow); Вгорі */
+    border-bottom: solid 3px var(--color-brand-yellow);
+    border-top: solid 3px var(--color-brand-yellow);
+}
+
+.button-hero {
+
+}
+
+.hero-title {
+    margin-bottom: 0;
+    font-family: 'Yeseva One', sans-serif;
+    color: var(--color-brand-light); 
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.dogs-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*ICON*/
+.icon-container-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 78px;
+    padding-bottom: 46px;
+    margin: 0;
+}
+
+.icon-container {
+    display: flex;
+    gap: 24px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    transition: filter 0.3s ease;
+}
+
+.icon1:hover {
+    content: url(../img/facebook-icon-hover.svg);
+}
+
+.icon2:hover {
+    content: url(../img/inst-icon-hover.svg);
+}
+
+.icon3:hover {
+    content: url(../img/whatsapp-icon-hover.svg);
+}
+
+.social-icon-footer {
+    width: 35px;
+    height: 35px;
+    transition: filter 0.3s ease;
+}
+
+/*Еліпси*/
+.soft-rectangle-mops {
+    background-image: url(../img/mops.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 584px;
+    height: 300px;
+    background-size: 88%;
+    background-color: var(--color-brand-violet);
+    border-radius: 176px;
+    box-shadow: 16px 14px 0px 1px var(--color-shadow-violet);
+}
+
+/*Послуги*/
+.section-title {
+    text-align: center;
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.services-title {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 24px;
+    margin-left: 154px;
+}
+
+.services-container {
+    
+}
+
+.img-services {
+    border-radius: 22px;
+    margin-top: 28px;
+    margin-left: 28px;
+    display: block;
+    max-width: 100%;
+    border-top: 15px solid var(--color-violet-dark);
+    border-right: 15px solid var(--color-violet-dark);
+    border-bottom: 77px solid var(--color-violet-dark);
+    border-left: 15px solid var(--color-violet-dark);
+    box-shadow: 5px 5px 4px var(--color-shadow);
+}
+
+.caption {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 24px;
+    color: var(--color-brand-light);
+    padding: 4px 8px;
+        
+}
+
+.services-card {
+    display: inline-block;
+    position: relative;
+}
+
+/*About us*/
+.smaller-container {
+    width: 100%;
+    max-width: 1014px;
+    margin: 0 auto;        
+    padding: 0 24px;
+}
+
+.section-about-us {
+    padding: 92px 0 1px;
+    background-color: var(--color-brand-violet);
+    min-width: max-content;
+    /*box-shadow:
+        inset 0 4px 4px var(--color-violet-dark),
+        /* Внизу 
+        inset 0 -4px 4px var(--color-violet-dark);
+    /* Вгорі */
+    border-bottom: solid 3px var(--color-brand-yellow);
+    border-top: solid 3px var(--color-violet-dark);
+}
+
+.img-about-us {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-us-content {
+    display: flex;
+    gap: 36px;
+    margin-bottom: 66px;
+}
+
+/*Button*/
+.button {
+    font-family: 'Nunito';
+    /*background-color: var(--color-brand-yellow);*/
+    background: linear-gradient(#FFD573 0%, #E2AC2C 70%, #FFBF29 100%);
+    box-shadow: 2px 2px #E8B130;
+    padding: 16px 32px 16px 32px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    font-family: 'Nunito';
+        /*background-color: var(--color-brand-yellow);*/
+    background: linear-gradient(#FFD573 0%, #E2AC2C 70%, #FFBF29 100%);
+    box-shadow: 2px 2px #E8B130, 6px 6px 6px var(--color-shadow);
+    padding: 16px 32px 16px 32px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button-dog-img {
+    position: absolute;
+    z-index: 100;
+    margin-top: 22px;
+}
+
+.button-dog {
+    margin-top: 160px;
+}
+
+.elipse-container {
+    display: flex;
+    justify-content: end;
+}
+
+/*Contacts*/
+.contacts-container {
+    display: flex;
+    gap: 34px;
+}
+
+.contact-title {
+    font-family: 'Yeseva One', sans-serif;
+    color: var(--color-brand-light);
+    font-size: 36px;
+}
+
+.hero-title-contacts{
+    color: var(--color-brand-light);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.adress-decorattion {
+    text-decoration: none;
+    color: var(--color-brand-light);
+}
+
+.icon-contacts {
+    width: 24px;
+    /* Ширина іконки */
+    height: 24px;
+    /* Висота іконки */
+    margin-right: 10px;
+    /* Відступ між іконкою і текстом */ 
+}
+
+.item-contacts {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.adress-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.time-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Modal */
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    /* плавно ховати та відкривати вікно */
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    display: none;
+}
+
+.modal {
+    position: relative;
+    width: 100%;
+    max-width: 611px;
+    height: 100%;
+    max-height: 651px;
+    padding: 88px;
+    background-color: var(--color-brand);
+    border-radius: 32px;
+    overflow-y: auto;
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+
+    width: 25px;
+    /* Задайте бажаний розмір кнопки */
+    height: 25px;
+    /* Червоний колір */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    /* Робимо кнопку круглою */
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+
+
+
+.modal-title {
+    font-family: 'Yeseva One';
+    font-size: 35px;
+    color: var(--color-brand-light);
+    text-align: center;
+}
+
+.modal-paragraph {
+    color: var(--color-brand-light);
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+    width: 367px;
+    height: 70px;
+}
+
+/*Form*/
+.input {
+    color: var(--color-brand-light);
+    padding: 20px 20px;
+    width: 90%;
+    background-color: var(--color-violet-light);
+    border: none;
+    border-radius: 29px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.input:focus {
+    color: var(--color-brand-light);
+}
+
+.form-input {
+    display: block; 
+}
+
+.form-field {
+    margin-bottom: 16px;
+    
+}
+
+.input::placeholder {
+    color: var(--color-placeholder);
+}
+
+.button-form {
+    font-family: 'Nunito';
+    /*background-color: var(--color-brand-yellow);*/
+    background: linear-gradient(#FFD573 0%, #E2AC2C 70%, #FFBF29 100%);
+    box-shadow: 2px 2px #E8B130;
+    padding: 16px 136px 16px 136px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 24px;
+} 
+
+.button-form:hover {
+    font-family: 'Nunito';
+    /*background-color: var(--color-brand-yellow);*/
+    background: linear-gradient(#FFD573 0%, #E2AC2C 70%, #FFBF29 100%);
+    box-shadow: 2px 2px #E8B130,
+            6px 6px var(--color-shadow);
+    box-shadow: 2px 2px #E8B130;
+    padding: 16px 136px 16px 136px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 24px;
+}
+/*Last*/
+.last-section {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 24px;
+    color: var(--color-brand-dark);
+}
+
+.input-second {
+    color: var(--color-brand-dark);
+    padding: 20px 20px;
+    width: 90%;
+    background-color: transparent;
+    border-radius: 29px;
+    display: block;
+    border: solid;
+    border-color: var(--color-brand-yellow);
+    box-shadow: 2px 2px 6px var(--color-shadow);
+}
+
+.contact-map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+    
+}
+
+.section-frame {
+    border-bottom: solid 3px var(--color-brand-yellow);
+}
+
